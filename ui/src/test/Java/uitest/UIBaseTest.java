@@ -73,4 +73,17 @@ public abstract class UIBaseTest {
             driver = new ChromeDriver();
         }
     }
+
+    /**
+     * Custom sleep method
+     * @param milliseconds
+     */
+    public void testSleeps(int milliseconds) {
+        try {
+            System.out.println("Sleeping for " + milliseconds + " milliseconds");
+            Thread.sleep(milliseconds);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
 }
