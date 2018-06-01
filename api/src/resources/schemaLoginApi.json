@@ -1,0 +1,213 @@
+{
+  "$id": "http://example.com/example.json",
+  "type": "object",
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "properties": {
+    "success": {
+      "$id": "/properties/success",
+      "type": "object",
+      "properties": {
+        "url": {
+          "$id": "/properties/success/properties/url",
+          "type": "string",
+          "title": "The Url Schema ",
+          "default": "",
+          "examples": [
+            "https://secure.sigfig.com/l/portfolio"
+          ]
+        },
+        "user": {
+          "$id": "/properties/success/properties/user",
+          "type": "object",
+          "properties": {
+            "username": {
+              "$id": "/properties/success/properties/user/properties/username",
+              "type": "string",
+              "title": "The Username Schema ",
+              "default": "",
+              "examples": [
+                "automation_assignment"
+              ]
+            },
+            "isAuthenticated": {
+              "$id": "/properties/success/properties/user/properties/isAuthenticated",
+              "type": "boolean",
+              "title": "The Isauthenticated Schema ",
+              "default": false,
+              "examples": [
+                true
+              ]
+            },
+            "isSecure": {
+              "$id": "/properties/success/properties/user/properties/isSecure",
+              "type": "boolean",
+              "title": "The Issecure Schema ",
+              "default": false,
+              "examples": [
+                true
+              ]
+            },
+            "isRecognized": {
+              "$id": "/properties/success/properties/user/properties/isRecognized",
+              "type": "boolean",
+              "title": "The Isrecognized Schema ",
+              "default": false,
+              "examples": [
+                true
+              ]
+            },
+            "authExpiry": {
+              "$id": "/properties/success/properties/user/properties/authExpiry",
+              "type": "integer",
+              "title": "The Authexpiry Schema ",
+              "default": 0,
+              "examples": [
+                1527561418
+              ]
+            },
+            "isConvertedPortfolioUser": {
+              "$id": "/properties/success/properties/user/properties/isConvertedPortfolioUser",
+              "type": "boolean",
+              "title": "The Isconvertedportfoliouser Schema ",
+              "default": false,
+              "examples": [
+                false
+              ]
+            },
+            "hasSyncedPortfolios": {
+              "$id": "/properties/success/properties/user/properties/hasSyncedPortfolios",
+              "type": "boolean",
+              "title": "The Hassyncedportfolios Schema ",
+              "default": false,
+              "examples": [
+                false
+              ]
+            },
+            "pendingRegistration": {
+              "$id": "/properties/success/properties/user/properties/pendingRegistration",
+              "type": "boolean",
+              "title": "The Pendingregistration Schema ",
+              "default": false,
+              "examples": [
+                false
+              ]
+            },
+            "userEmailConfirmed": {
+              "$id": "/properties/success/properties/user/properties/userEmailConfirmed",
+              "type": "boolean",
+              "title": "The Useremailconfirmed Schema ",
+              "default": false,
+              "examples": [
+                false
+              ]
+            },
+            "userEmail": {
+              "$id": "/properties/success/properties/user/properties/userEmail",
+              "type": "string",
+              "title": "The Useremail Schema ",
+              "default": "",
+              "examples": [
+                "automation_assignment@gmail.com"
+              ]
+            },
+            "displayName": {
+              "$id": "/properties/success/properties/user/properties/displayName",
+              "type": "string",
+              "title": "The Displayname Schema ",
+              "default": "",
+              "examples": [
+                "automation_assignment"
+              ]
+            },
+            "firstName": {
+              "$id": "/properties/success/properties/user/properties/firstName",
+              "type": "null",
+              "title": "The Firstname Schema ",
+              "default": null,
+              "examples": [
+                null
+              ]
+            },
+            "lastName": {
+              "$id": "/properties/success/properties/user/properties/lastName",
+              "type": "null",
+              "title": "The Lastname Schema ",
+              "default": null,
+              "examples": [
+                null
+              ]
+            },
+            "hash": {
+              "$id": "/properties/success/properties/user/properties/hash",
+              "type": "string",
+              "title": "The Hash Schema ",
+              "default": "",
+              "examples": [
+                "e08db16e4d0db9bd919ab9e92b0213391dcc049e4e222bea03997d2b7a7570fd"
+              ]
+            },
+            "obfuscatedUserId": {
+              "$id": "/properties/success/properties/user/properties/obfuscatedUserId",
+              "type": "string",
+              "title": "The Obfuscateduserid Schema ",
+              "default": "",
+              "examples": [
+                "YWIxZTIzMzIzMDMxMzkzMDM0Mzg$"
+              ]
+            },
+            "hasAgreedToTOS": {
+              "$id": "/properties/success/properties/user/properties/hasAgreedToTOS",
+              "type": "boolean",
+              "title": "The Hasagreedtotos Schema ",
+              "default": false,
+              "examples": [
+                true
+              ]
+            },
+            "hasAgreedToTlhTos": {
+              "$id": "/properties/success/properties/user/properties/hasAgreedToTlhTos",
+              "type": "boolean",
+              "title": "The Hasagreedtotlhtos Schema ",
+              "default": false,
+              "examples": [
+                false
+              ]
+            },
+            "roles": {
+              "$id": "/properties/success/properties/user/properties/roles",
+              "type": "null",
+              "title": "The Roles Schema ",
+              "default": null,
+              "examples": [
+                null
+              ]
+            },
+            "sessionContext": {
+              "$id": "/properties/success/properties/user/properties/sessionContext",
+              "type": "array"
+            },
+            "multipleSessions": {
+              "$id": "/properties/success/properties/user/properties/multipleSessions",
+              "type": "boolean",
+              "title": "The Multiplesessions Schema ",
+              "default": false,
+              "examples": [
+                true
+              ]
+            },
+            "obfuscated": {
+              "$id": "/properties/success/properties/user/properties/obfuscated",
+              "type": "string",
+              "title": "The Obfuscated Schema ",
+              "default": "",
+              "examples": [
+                "OTFkODJlNjE3NTc0NmY2ZDYxNzQ2OTZmNmU1ZjYxNzM3MzY5Njc2ZTZkNjU2ZTc0"
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}

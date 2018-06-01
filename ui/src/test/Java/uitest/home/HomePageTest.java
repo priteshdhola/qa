@@ -14,21 +14,21 @@ import uitest.UIBaseTest;
 public class HomePageTest extends UIBaseTest{
     HomePage homePage;
 
-    @BeforeClass(alwaysRun = true)
+    @BeforeClass(alwaysRun = true,timeOut = 10000)
     public void setup() {
         super.setUp();
         homePage = new HomePage(super.getDriver());
     }
 
     // This will run three test cases as there are 3 different values in search tokens data provider
-    @Test(timeOut = 30000,groups = {"p1", "sanity"},dataProvider = "searchTokens",dataProviderClass = SearchData.class, retryAnalyzer = TestRetryListener.class)
+    @Test(timeOut = 10000,groups = {"p1", "sanity"},dataProvider = "searchTokens",dataProviderClass = SearchData.class, retryAnalyzer = TestRetryListener.class)
     public void homePageSearchTest(String searchToken) {
 
         homePage.searchItem(searchToken);
         super.testSleeps(1000);
     }
 
-    @AfterClass(alwaysRun = true)
+    @AfterClass(alwaysRun = true,timeOut = 10000)
     public void tearDown() {
         super.tearDown();
     }

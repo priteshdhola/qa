@@ -5,6 +5,7 @@ import core.framework.testConfig.TestConfiguration;
 import org.aeonbits.owner.ConfigFactory;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
@@ -48,7 +49,7 @@ public abstract class UIBaseTest {
 
     /**
      * Returns the current web driver object
-     * @return
+     * @return webdriver object
      */
     public WebDriver getDriver() {
         return driver;
@@ -63,14 +64,15 @@ public abstract class UIBaseTest {
         if (testCfg.userGrid()) {
             URL u = null;
             try {
-                u = new URL("http://localhost:4444/wd/hub");
+                u = new URL("http://selenium-hub:4444/wd/hub");
             } catch (MalformedURLException e) {
                 e.printStackTrace();
             }
             driver = new RemoteWebDriver(u, capability);
         } else {
-            System.setProperty("webdriver.chrome.driver", "/work/automation/selenium/drivers/chromedriver");
+            System.setProperty("webdriver.chrome.driver", "/Users/pritesh/selenium/chromedriver");
             driver = new ChromeDriver();
+//            driver = new FirefoxDriver();
         }
     }
 
