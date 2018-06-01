@@ -1,12 +1,8 @@
 # Automation Framework
 
-## How to run the code
-Go to qa directory
+## Build the project first without runinng tests
 ```
 cd qa
-```
-Do a mavent build without running the tests first
-```
 mvn clean install -Dmaven.test.skip=true
 ```
 ## How to run api tests
